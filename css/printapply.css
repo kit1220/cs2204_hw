@@ -1,0 +1,41 @@
+form{
+    display: none;
+}
+.The_welcome_block{
+    display: none;
+}
+.divisions-headings{
+    display: none;
+}
+#slogan {
+    display: none;
+}
+input {
+    display: none;
+}
+nav{
+    display: none;
+}
+footer{
+    text-align: center;
+}
+footer image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40%;
+    height: auto;
+}
+header {
+    padding-bottom: 2vh;
+    font-size: 1vw;
+}
+header h1 {
+    text-align: center;
+    font-size: 150%;
+}

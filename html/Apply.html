@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Apply</title>
+    <link rel="stylesheet" href="../css/apply.css">
+    <script src="../js/apply.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="../image/logo.png" alt="logo photo not find" width="550" height="150">
+        <h1>Intelligent Sensing Lab</h1>
+    </header>
+    <div class="stick">
+        <div class="nav_list">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../html/About.html">About</a></li>
+                    <li><a href="../html/Apply.html">Apply</a></li>
+                    <li><a href="../html/Visit.html">Visit</a></li>
+                    <li><a href="../html/Information.html">Information</a></li>
+                    <li><a href="../html/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="The_welcome_block">
+        <h2>Welcome to ISLab</h2>
+    </div>
+    
+    <h3 id="slogan">Join our cutting-edge research teams in these focus areas:</h3>
+    
+    <div class="divisions-headings">
+        <h3 class="division-heading" data-division="optical" onclick="switchDivision('optical')">Optical Sensing Division</h3>
+        <h3 class="division-heading" data-division="bio" onclick="switchDivision('bio')">Bio-Sensing Division</h3>
+        <h3 class="division-heading" data-division="smart" onclick="switchDivision('smart')">Smart Sensing Division</h3>
+    </div>
+    
+
+    <div class="research-teams-container">
+
+        <div class="division-forms optical" id="optical-forms">
+            <form action="#" method="get" class="a1">
+                <img src="../image/hyperspectral.png" alt="hyperspectral" width="200" height="200">
+                <label for="OSD_hs">Hyperspectral Imaging Group</label>
+                <input type="text" id="OSD_hs" name="OSD_hs" placeholder="Enter rank">
+                <button type="button" class="rank-btn">rank of choice</button>
+            </form>
+            <form action="#" method="get" class="a2">
+                <img src="../image/lidar.png" alt="lidar" width="200" height="200">
+                <label for="OSD_li">LiDAR Development Team</label>
+                <input type="text" id="OSD_li" name="OSD_li" placeholder="Enter rank">
+                <button type="button" class="rank-btn">rank of choice</button>
+            </form>
+            <form action="#" method="get" class="a3">
+                <img src="../image/nanophotonics.png" alt="nanophotonics" width="200" height="200">
+                <label for="OSD_na">Nanophotonics Research</label>
+                <input type="text" id="OSD_na" name="OSD_na" placeholder="Enter rank">
+                <button type="button" class="rank-btn">rank of choice</button>
+            </form>
+        </div>
+        
+
+        <div class="division-forms bio" id="bio-forms">
+            <form action="#" method="get" class="a1">
+                <img src="../image/medical.png" alt="medical" width="200" height="200">
+                <label for="BSD_me">Medical Diagnostics Group</label>
+                <input type="text" id="BSD_me" name="BSD_me" placeholder="Enter rank">
+                <button type="button" class="rank-btn">rank of choice</button>
+            </form>
+            <form action="#" method="get" class="a2">
+                <img src="../image/environmental.png" alt="environmental" width="200" height="200">
+                <label for="BSD_en">Environmental Sensors Team</label>
+                <input type="text" id="BSD_en" name="BSD_en" placeholder="Enter rank">
+                <button type="button" class="rank-btn">rank of choice</button>
+            </form>
+            <form action="#" method="get" class="a3">
+                <img src="../image/wearable.png" alt="wearable" width="200" height="200">
+                <label for="BSD_we">Wearable Technology Lab</label>
+                <input type="text" id="BSD_we" name="BSD_we" placeholder="Enter rank">
+                <button type="button" class="rank-btn">rank of choice</button>
+            </form>
+        </div>
+        
+
+        <div class="division-forms smart" id="smart-forms">
+            <form action="#" method="get" class="a1">
+                <img src="../image/iot.png" alt="iot" width="200" height="200">
+                <label for="SSD_iot">IoT Sensor Networks</label>
+                <input type="text" id="SSD_iot" name="SSD_iot" placeholder="Enter rank">
+                <button type="button" class="rank-btn">rank of choice</button>
+            </form>
+            <form action="#" method="get" class="a2">
+                <img src="../image/ai.png" alt="ai" width="200" height="200">
+                <label for="SSD_ai">AI-Enabled Sensing</label>
+                <input type="text" id="SSD_ai" name="SSD_ai" placeholder="Enter rank">
+                <button type="button" class="rank-btn">rank of choice</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <div class="The_resulting_block">
+        <h2>Your chosen research groups:</h2>
+        <h3>Current Internship Placements:</h3>
+        
+        <table id="choices-table">
+            <thead>
+                <tr>
+                    <th>Division</th>
+                    <th>Research Group</th>
+                    <th>Rank</th>
+                </tr>
+            </thead>
+            <tbody id="choices-table-body">
+
+            </tbody>
+        </table>
+        
+        <div id="summary-info">
+            <h2>Total Number of Groups Applied: <span id="total-groups">0</span></h2>
+            <h2 id="last-change-time">Last Change Time: Not yet</h2>
+            <h2>Application Deadline: 15 October 2025</h2>
+        </div>
+        
+        <a href="#" id="submit-link" class="action-link">Submit</a>
+        <a href="#" id="clear-link" class="action-link">Clear</a>
+        <div id="error-message"></div>
+        <div id="success-message"></div>
+    </div>
+
+    <footer>
+        <img src="../image/footer_logo.png" alt="footerlogo" width="460" height="100"> 
+        <p> &copy; CityU 2024 sources of images and text from Wikipedia Commons and Courtesy of Icon pack by Icons8 -- designed by</p>
+        <a href="../html/design_page.html">Anthony Wong</a>
+    </footer>
+</body>
+</html>
